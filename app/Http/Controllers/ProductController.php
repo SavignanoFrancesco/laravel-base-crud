@@ -16,10 +16,10 @@ class ProductController extends Controller
     {
         //collections da passare alla view
         $data = [
-
+            'products' => Product::all(),
         ];
         //pagina da mostrare
-        return view('products',$data);
+        return view('products.index',$data);
     }
 
     /**
