@@ -51,7 +51,17 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::find($id);
+        if ($product) {
+            //collections da passare alla view
+            $data = [
+                'product' => $product,
+            ];
+            //pagina da mostrare
+            return view('products.show',$data);
+        }else{
+            abort(404);
+        }
     }
 
     /**

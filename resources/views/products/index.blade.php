@@ -12,6 +12,7 @@
                     <th>Size</th>
                     <th>Color</th>
                     <th>Price</th>
+                    <th>Azioni</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +24,7 @@
                     <td>{{$product->size}}</td>
                     <td>{{$product->color}}</td>
                     <td>{{$product->price}}</td>
+                    <td><a href="{{route('products.show',['product'=> $product->id])}}">Dettagli</a></td>
                 </tr>
                 @endforeach
             </tbody>
