@@ -11,4 +11,7 @@ ul{
 .container{
     width: 1170px;
     margin: auto;
+    & > *{
+        padding: 10px 5px;
+    }
 }

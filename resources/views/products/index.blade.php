@@ -4,7 +4,7 @@
 @section('content')
     <h1>Products</h1>
     <a href="{{route('products.create')}}">[Aggiungi prodotto]</a>
-        <table>
+        <table id='table'>
             <thead>
                 <tr>
                     <th>ID</th>

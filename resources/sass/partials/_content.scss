@@ -1,0 +1,28 @@
+#table{
+    text-align: left;
+    thead{
+        tr{
+            th{
+                // padding: 5px 10px;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                padding: 5px 15px;
+                padding-left:0;
+            }
+        }
+    }
+}
+
+#create-form{
+    padding: 10px 0;
+    .btn-group{
+        padding: 10px 0;
+        button{
+            padding: 5px;
+        }
+    }
+}

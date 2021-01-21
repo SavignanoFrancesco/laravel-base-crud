@@ -13,6 +13,10 @@ ul {
   margin: auto;
 }
 
+.container > * {
+  padding: 10px 5px;
+}
+
 #home-menu {
   background-color: whitesmoke;
   border: 1px solid black;
@@ -33,5 +37,26 @@ ul {
 
 #home-menu ul li {
   padding: 20px;
+}
+
+#table {
+  text-align: left;
+}
+
+#table tbody tr td {
+  padding: 5px 15px;
+  padding-left: 0;
+}
+
+#create-form {
+  padding: 10px 0;
+}
+
+#create-form .btn-group {
+  padding: 10px 0;
+}
+
+#create-form .btn-group button {
+  padding: 5px;
 }
 
