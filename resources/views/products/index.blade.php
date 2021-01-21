@@ -3,6 +3,7 @@
 
 @section('content')
     <h1>Products</h1>
+    <a href="{{route('products.create')}}">[Aggiungi prodotto]</a>
         <table>
             <thead>
                 <tr>
@@ -29,5 +30,6 @@
                 @endforeach
             </tbody>
         </table>
+
 
 @endsection
