@@ -42,6 +42,17 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
+        $data = $request->all();
+        $product_add = new Product;
+        $product_add->fill($data);
+        // $product_add->gender = $data['gender'];
+        // $product_add->type = $data['type'];
+        // $product_add->size = $data['size'];
+        // $product_add->color = $data['color'];
+        // $product_add->price = $data['price'];
+        $product_add->save();
+
+        return redirect()->route('products.index');
     }
 
     /**
