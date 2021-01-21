@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+#home-menu {
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+#home-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+#home-menu ul li {
+  padding: 20px;
+}
+

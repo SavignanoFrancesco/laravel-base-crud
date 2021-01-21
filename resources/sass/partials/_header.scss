@@ -1,0 +1,13 @@
+
+#home-menu{
+    background-color: whitesmoke;
+    border:1px solid black;
+
+    ul{
+        @include flexbox();
+        @include flexbox(row,flex-start,flex-start);
+        li{
+            padding:20px;
+        }
+    }
+}
