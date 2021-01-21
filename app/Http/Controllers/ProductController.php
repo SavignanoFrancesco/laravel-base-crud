@@ -43,6 +43,7 @@ class ProductController extends Controller
     {
         //
         $data = $request->all();
+        // dd($data);
         $product_add = new Product;
         $product_add->fill($data);
         // $product_add->gender = $data['gender'];
@@ -51,12 +52,11 @@ class ProductController extends Controller
         // $product_add->color = $data['color'];
         // $product_add->price = $data['price'];
         $product_add->save();
-
         //bottone1
-        if (isset($_POST['index_view'])) {
+        if ($data['submit'] == 'index_view') {
             return redirect()->route('products.index');
         //bottone2
-        }else if (isset($_POST['create_view'])) {
+        }else if ($data['submit'] == 'create_view') {
             return redirect()->route('products.create');
         }else{
             abort(404);

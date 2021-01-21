@@ -27,9 +27,9 @@
             <input type="number" step="0.01" name="price">
         </div>
         <div class="btn-group">
-            <button type="submit" name='index_view'>Salva prodotto e visualizza tabella</button>
+            <button type="submit" name='submit' value='index_view'>Salva prodotto e visualizza tabella</button>
 
-            <button type="submit" name='create_view'>Salva prodotto e aggiungine un altro</button>
+            <button type="submit" name='submit' value='create_view'>Salva prodotto e aggiungine un altro</button>
         </div>
     </form>
 </div>
