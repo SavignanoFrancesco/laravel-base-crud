@@ -52,7 +52,15 @@ class ProductController extends Controller
         // $product_add->price = $data['price'];
         $product_add->save();
 
-        return redirect()->route('products.index');
+        //bottone1
+        if (isset($_POST['index_view'])) {
+            return redirect()->route('products.index');
+        //bottone2
+        }else if (isset($_POST['create_view'])) {
+            return redirect()->route('products.create');
+        }else{
+            abort(404);
+        }
     }
 
     /**
