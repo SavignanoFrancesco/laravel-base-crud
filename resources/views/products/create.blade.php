@@ -3,7 +3,7 @@
 @section('content')
 <div class="">
     <h1>Inserisci nuovo prodotto(riga della tabella products)</h1>
-    <form id='create-form' action="{{route('products.store')}}" method="post">
+    <form id='form' action="{{route('products.store')}}" method="post">
 
         @csrf{{-- token --}}
         <div class="">

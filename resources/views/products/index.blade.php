@@ -25,7 +25,19 @@
                     <td>{{$product->size}}</td>
                     <td>{{$product->color}}</td>
                     <td>{{$product->price}}</td>
-                    <td><a href="{{route('products.show',['product'=> $product->id])}}">Dettagli</a></td>
+                    <td id="actions">
+                        <a href="{{route('products.show',['product'=> $product->id])}}">Show</a>
+                        <a href="{{ route('products.edit', ['product' => $product->id]) }}" class="btn btn-warning">
+                                     Edit
+                                  </a>
+                        <form method="POST" action="{{ route('products.destroy', ['product' => $product->id]) }}">
+                                       @csrf
+                                       @method('DELETE')
+                                       <button type="submit">
+                                           Destroy
+                                       </button>
+                                   </form>
+                    </td>
                 </tr>
                 @endforeach
             </tbody>

@@ -17,7 +17,7 @@
     }
 }
 
-#create-form{
+#form{
     padding: 10px 0;
     .btn-group{
         padding: 10px 0;
@@ -25,4 +25,10 @@
             padding: 5px;
         }
     }
+}
+
+#actions > *{
+    display: inline-block;
+    padding: 0 5px;
+
 }

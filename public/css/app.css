@@ -48,15 +48,20 @@ ul {
   padding-left: 0;
 }
 
-#create-form {
+#form {
   padding: 10px 0;
 }
 
-#create-form .btn-group {
+#form .btn-group {
   padding: 10px 0;
 }
 
-#create-form .btn-group button {
+#form .btn-group button {
   padding: 5px;
+}
+
+#actions > * {
+  display: inline-block;
+  padding: 0 5px;
 }
 
