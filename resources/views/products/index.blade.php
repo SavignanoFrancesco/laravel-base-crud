@@ -2,6 +2,7 @@
 
 
 @section('content')
+    @include('partials.success')
     <h1>Products</h1>
     <a href="{{route('products.create')}}">[Aggiungi prodotto]</a>
         <table id='table'>

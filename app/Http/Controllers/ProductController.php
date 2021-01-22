@@ -54,10 +54,10 @@ class ProductController extends Controller
         $product_add->save();
         //bottone1
         if ($data['submit'] == 'index_view') {
-            return redirect()->route('products.index');
+            return redirect()->route('products.index')->withSuccess('Store ha funzionato con successo per il prodotto con ID: '.$product_add->id);
         //bottone2
         }else if ($data['submit'] == 'create_view') {
-            return redirect()->route('products.create');
+            return redirect()->route('products.create')->withSuccess('Store ha funzionato con successo per il prodotto con ID: '.$product_add->id);
         }else{
             abort(404);
         }
@@ -114,7 +114,7 @@ class ProductController extends Controller
         //
         $data = $request->all();
         $product->update($data);
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->withSuccess('Update ha funzionato con successo per il prodotto con ID: '.$product->id);
     }
 
     /**
@@ -125,8 +125,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $tmp_id = $product->id;
         $product->delete();
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->withSuccess('Distrutto il prodotto con ID: '.$tmp_id);
     }
 }
